@@ -1,0 +1,410 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* navbar */
+.lien-anim {
+    /* nécessaire pour translate */
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.lien-anim:hover {
+    transform: translateX(4px);
+    /* monte le lien */
+}
+
+
+/* home page */
+.image img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50px;
+}
+
+.haut {
+    background-color: #FEF7DE;
+}
+
+.image1 img {
+    width: 40px;
+    height: 25px;
+}
+
+.btn {
+    background-color: #1F3D15;
+    width: 220px;
+    color: white;
+}
+
+.btn1 {
+    background-color: #fff;
+}
+.input-group {
+    width: 450px;
+}
+
+.form-control,
+.form-control input {
+    width: 450px;
+    outline: none;
+    border: solid #ddd;
+}
+
+.ensemble-d-input {
+    width: 500px;
+}
+
+.footer-section2 {
+    background-color: #1F3D15;
+}
+
+.footer-section2:hover {
+    background-color: #29551c;
+    /* un peu plus clair */
+
+}
+
+.bg-photo {
+    background-image: url("./agri-images/Home\ Carroussel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 60vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.bg-btn,
+.card-profil {
+    background-color: #EEDF68;
+    color: #8B8B6A;
+}
+
+.bg-btn:hover {
+    background-color: #EEDF68;
+    color: #8B8B6A;
+}
+/* mains styles */
+.page-d-accueil {
+    margin-top: 180px;
+    position: relative;
+    z-index: 2;
+}
+
+/* Style des cardes-image */
+.carde-image .card {
+    overflow: hidden;
+    border-radius: 12px;
+}
+
+.carde-image img {
+    height: 500px;
+    object-fit: cover;
+    width: 100%;
+}
+
+/* Texte blanc au-dessus de l'image */
+.carde-image .card-overlay {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 200px;
+    padding: 15px;
+    background: white;
+    border-radius: 12px;
+    font-weight: 700;
+    text-align: center;
+    font-size: 1.3rem;
+    transition: 0.5s ;
+}
+
+.position-absolute {
+    bottom: 10px;
+    top: 60%;
+}
+
+.petite-card {
+    width: 80px;
+    height: 80px;
+}
+
+.card-jaune {
+    background-color: #EFDF68;
+    color: #736f5a;
+}
+
+.card-jaune .icone,
+.card-jaune h2,
+.card-jaune h5 {
+    color: #5A5856;
+}
+
+.icone1 {
+    color: #07BFE5;
+}
+
+.text-color {
+    color: #245545;
+}
+/* la partir formation */
+.accueil-formation {
+    margin: 40px;
+}
+
+.main-section1 {
+    background-image: url("./agri-images/Home\ Carroussel.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 30vh;
+    position: relative;
+}
+
+
+.card-img-top, .card-img-top1 {
+    object-fit: cover;
+    height: 30vh;
+    width: 100%;
+    transition:0.3s ;
+}
+.card-img-top1:hover{
+    /* zoom léger */
+    transform:  scaley(1.02);
+    /* assombrit légèrement l’image */
+    filter: brightness(0.7);
+}
+
+
+.card-cercle {
+    width: 100px;
+    height: 100px;
+    background-color: #EEDF68;
+    bottom: 50%;
+    top: 45%;
+    left: 30px;
+    color: #8B8B6A;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+}
+
+.btn-custom {
+    background-color: #1F3D15;
+    color: white;
+}
+
+.bg-photo::before,
+.main-section1::before {
+    content: "";
+    position: absolute;
+    inset: 0.7;
+    background: inherit;
+    filter: blur(2px);
+    transform: scale(1.1);
+}
+
+.main-section1,
+.main-section2 {
+    width: 90%;
+    margin: auto;
+}
+
+.text-section1 {
+    position: relative;
+    z-index: 2;
+}
+
+.card h4,
+.card p {
+    margin: 0;
+}
+/* image-hover */
+.card-img-top {
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+/* Effet au survol */
+.card-img-top:hover {
+    /* zoom léger */
+    transform: rotate(8deg) scale(1.2);
+}
+.card-blanc:hover .card-overlay{
+    height: 350px;
+}
+
+.card-blanc:hover .carde-icone{
+    opacity: 1;
+    transform: translateY(0);
+}
+/* Main style */
+
+/* la partir voir plus */
+
+.card-profil {
+    background-color: #EEDF68;
+    color: #8B8B6A;
+    padding: 2rem;
+}
+
+.card-categorie {
+    background-color: #E3E6E7;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.image-malika img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+}
+
+.card-title,
+.social-media,
+.card-sous-titre,
+.la-couleur {
+    color: #5B585C;
+}
+
+.social-media i {
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.social-media i:hover {
+    transform: scale(1.2);
+    color: #1F3D15;
+}
+
+.la-couleur {
+    line-height: 1.6;
+}
+
+.couleur1 {
+    color: #BDC0BE;
+}
+
+.couleur2 {
+    color: #777874;
+}
+
+.commentaire {
+    border-top: solid#89bbb0 !important;
+    border-bottom: solid#AECEC7 !important;
+    /* border: solid; */
+}
+
+.les-input {
+    background-color: #EAEEEF;
+}
+
+
+
+@media (max-width:1024px) {
+    .input-group {
+        width: 300px;
+    }
+
+    .btn {
+        width: 150px;
+    }
+
+    .disparution {
+        display: none;
+    }
+
+    .btn-home {
+        width: 200px;
+    }
+
+}
+@media (min-width:769px) {
+   
+   .carde-icone{
+    opacity: 0;
+    transition: 0.3s;
+}
+}
+@media (max-width:768px) {
+    .translate-middle-y {
+        transform: translateY(-250px) !important;
+    }
+    .cacher{
+        height: 100% !important;
+        width: 100% !important;
+        bottom: 0 !important;
+    }
+}
+
+
+@media (max-width: 576px) {
+
+    .card-profil,
+    .card-categorie {
+        padding: 1rem;
+    }
+
+    .card-title {
+        margin-top: 1rem !important;
+    }
+
+    .card-text {
+        font-size: 0.9rem !important;
+    }
+
+    .social-media i {
+        font-size: 1.2rem;
+    }
+
+    .col-7 {
+        width: 90% !important;
+    }
+
+    .w-75 {
+        width: 80% !important;
+    }
+
+    .w-75 .btn {
+        font-size: 10px !important;
+    }
+
+    .translate-middle-y {
+        transform: translateY(-200px) !important;
+    }
+
+    .petite-card {
+        width: auto;
+        height: auto;
+        font-size: 1.5rem !important;
+    }
+
+    .d-flex .satisfaction h2 {
+
+        font-size: 16px !important;
+    }
+
+    .d-flex .satisfaction P {
+
+        font-size: 8px !important;
+    }
+
+    /* .btn-home{
+        width: 10px;
+        
+    } */
+
+}
+
+@media (max-width:425px) {
+    .input-group {
+        width: 150px;
+    }
+
+}
